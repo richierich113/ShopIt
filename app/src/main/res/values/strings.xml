@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopit</string>
+
+    <string name="powered_by_richard_duah_boakye">Powered by Richard Duah Boakye</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="rating">8.16</string>
+    <string name="stock">50 in stock</string>
+    <string name="name">Unisex Premium T-Shirt</string>
+    <string name="price">12.95</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ShimitemImg"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_shimmer" />
+
+            <LinearLayout
+                android:id="@+id/Shimlinear_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/Shimname"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+
+                    android:background="@drawable/img_shimmer"
+                     />
+
+                <TextView
+                    android:id="@+id/Shimrating"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/img_shimmer"
+                     />
+
+                <TextView
+                    android:id="@+id/Shimprice"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimstock"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ShimitemImg1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_shimmer"
+                android:transitionName="ImageToImage" />
+
+            <LinearLayout
+                android:id="@+id/Shimlinear_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/Shimname1"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimrating1"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimprice1"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimstock1"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ShimitemImg2"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_shimmer"
+                android:transitionName="ImageToImage" />
+
+            <LinearLayout
+                android:id="@+id/Shimlinear_lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/Shimname2"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimrating2"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimprice2"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+                <TextView
+                    android:id="@+id/Shimstock2"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/img_shimmer"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

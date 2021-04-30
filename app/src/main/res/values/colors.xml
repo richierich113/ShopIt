@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue1</color>
+    <color name="colorPrimaryDark">@color/blue1</color>
+    <color name="colorAccent">@color/smokyBlack</color>
+
+
+    <color name="Yellow">#FFBF0B</color>
+    <color name="smokyBlack">#0F0F0F</color>
+    <color name="blue1">#13c3ef</color>
+    <color name="blue2">#25c8ef</color>
+    <color name="blue4">#4ad1f2</color>
+    <color name="blue9">#a5e9f8</color>
+    <color name="blue10">#caf2fb</color>
+    <color name="blue12">#eefbfe</color>
+    <color name="redLight">#ffeda29b</color>
+    <color name="grayColor">#AFACA7</color>
+    <color name="grayRippleColor">#CCC9C9</color>
+    <color name="lightgrayColor">#F5F5F5</color>
+    <color name="lightgrayColor1">#ECECEC</color>
+</resources>
