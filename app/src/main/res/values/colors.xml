@@ -6,13 +6,16 @@
 
 
     <color name="Yellow">#FFBF0B</color>
+    <color name="white">#FFF</color>
     <color name="smokyBlack">#0F0F0F</color>
+    <color name="black">#000</color>
     <color name="blue1">#13c3ef</color>
     <color name="blue2">#25c8ef</color>
     <color name="blue4">#4ad1f2</color>
     <color name="blue9">#a5e9f8</color>
     <color name="blue10">#caf2fb</color>
     <color name="blue12">#eefbfe</color>
+    <color name="green">#4BCE2B</color>
     <color name="redLight">#ffeda29b</color>
     <color name="grayColor">#AFACA7</color>
     <color name="grayRippleColor">#CCC9C9</color>

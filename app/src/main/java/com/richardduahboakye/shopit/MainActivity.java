@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.android.material.snackbar.Snackbar;
 import com.richardduahboakye.shopit.Retrofit.APIClient;
 import com.richardduahboakye.shopit.adapter.RecyclerAdapter;
 import com.richardduahboakye.shopit.model.ItemModel;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
        makeServerCall();
     }
 
+    Snackbar snackbar1;
     private void makeServerCall() {
         Call<List<ItemModel>> listCall = APIClient.apIinterface().getList();
 
@@ -92,6 +94,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+                    if (snackbar != null) {
+                        isConnected = true;
+                        snackbar.dismiss();
+                        int DelayTime = 1000;
+                        snackbar1 = Snackbar.make(recyclerView, "Back online", Snackbar.LENGTH_INDEFINITE).setDuration(DelayTime);
+                        //snackbar.setText(R.string.back_online);
+                        snackbar1.setActionTextColor(getResources().getColor(R.color.white));
+                        snackbar1.setBackgroundTint(getResources().getColor(R.color.green));
+                        snackbar1.show();
+
+                    }
+
                     //manage shimmer and recyclerview on response success
                     shimmerFrameLayout.stopShimmer();
                     shimmerFrameLayout.setVisibility(View.GONE);
@@ -104,23 +118,37 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(@NotNull Call<List<ItemModel>> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "please check your network: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "network error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
 
+                if (snackbar != null) {
+                    snackbar.isShown();
+                }
+
+                showNoconnectionSnack();
 
                //retrying server calling at time intervals when there is no connection
                 //on connection gain, server can be connected
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        makeServerCall();
-                    }
-                }, RETRY_CALL_LOADING);
+                new Handler().postDelayed(() -> makeServerCall(), RETRY_CALL_LOADING);
 
 
 
 
             }
         });
+
+    }
+    Snackbar snackbar;
+    boolean isConnected = false;
+    private void showNoconnectionSnack() {
+        isConnected = false;
+        //int DelayTime = 10000;
+         snackbar = Snackbar.make(recyclerView, "No connection", Snackbar.LENGTH_INDEFINITE);
+
+
+        snackbar.setActionTextColor(getResources().getColor(R.color.white));
+        snackbar.setBackgroundTint(getResources().getColor(R.color.black));
+        snackbar.show();
+        snackbar.isShown();
 
     }
 

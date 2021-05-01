@@ -10,4 +10,13 @@
     <string name="name">Unisex Premium T-Shirt</string>
     <string name="price">12.95</string>
     <string name="todo">TODO</string>
+    <string name="back_online">Back online</string>
+    <string name="description_text">Description text</string>
+    <string name="description">Description</string>
+    <string name="men_s">men\'s</string>
+    <string name="category">Category:</string>
+    <string name="_50_in_stock">50 in stock</string>
+    <string name="number_in_stock">Number in stock :</string>
+    <string name="price_title">Price :</string>
+    <string name="rating_title">Rating :</string>
 </resources>
